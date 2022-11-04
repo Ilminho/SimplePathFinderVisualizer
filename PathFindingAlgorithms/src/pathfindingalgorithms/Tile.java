@@ -136,32 +136,32 @@ public class Tile {
         try{
         switch(distance){
             case 0:
-                tileImage=ImageIO.read(new File(getClass().getResource("res/earth.png").toString().substring(5)));
+                tileImage=ImageIO.read(new File("SimplePathFinderVisualizer/PathFindingAlgorithms/src/pathfindingalgorithms/res/earth.png"));
                 break;
             case 1:
-                tileImage=ImageIO.read(new File(getClass().getResource("res/grass00.png").toString().substring(5)));
+                tileImage=ImageIO.read(new File("SimplePathFinderVisualizer/PathFindingAlgorithms/src/pathfindingalgorithms/res/grass00.png"));
                 break;
             case 2:
-                tileImage=ImageIO.read(new File(getClass().getResource("res/tree.png").toString().substring(5)));
+                tileImage=ImageIO.read(new File("SimplePathFinderVisualizer/PathFindingAlgorithms/src/pathfindingalgorithms/res/tree.png"));
                 break;
             case 3:
-                tileImage=ImageIO.read(new File(getClass().getResource("res/water00.png").toString().substring(5)));
+                tileImage=ImageIO.read(new File("SimplePathFinderVisualizer/PathFindingAlgorithms/src/pathfindingalgorithms/res/water00.png"));
                 break;
         }
         
         
         
         if(route)
-            tileImage=ImageIO.read(new File(getClass().getResource("res/road00.png").toString().substring(5)));
+            tileImage=ImageIO.read(new File("SimplePathFinderVisualizer/PathFindingAlgorithms/src/pathfindingalgorithms/res/road00.png"));
         
         if(!visitable)
-            tileImage=ImageIO.read(new File(getClass().getResource("res/wall.png").toString().substring(5)));
+            tileImage=ImageIO.read(new File("SimplePathFinderVisualizer/PathFindingAlgorithms/src/pathfindingalgorithms/res/wall.png"));
         
         if(endPoint)
-            tileImage=ImageIO.read(new File(getClass().getResource("res/hut.png").toString().substring(5)));
+            tileImage=ImageIO.read(new File("SimplePathFinderVisualizer/PathFindingAlgorithms/src/pathfindingalgorithms/res/hut.png"));
         
         if(startingPoint)
-            tileImage=ImageIO.read(new File(getClass().getResource("res/hut.png").toString().substring(5)));
+            tileImage=ImageIO.read(new File("SimplePathFinderVisualizer/PathFindingAlgorithms/src/pathfindingalgorithms/res/hut.png"));
         
         
         } catch (Exception e){
